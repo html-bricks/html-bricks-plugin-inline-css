@@ -1,0 +1,30 @@
+{
+  "name": "html-bricks-plugin-inline-css",
+  "version": "0.0.1",
+  "description": "Inline css for HTML-bricks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavgb/html-bricks-plugin-inline-css.git"
+  },
+  "keywords": [
+    "inline css",
+    "plugin",
+    "html-bricks",
+    "static",
+    "compiler",
+    "cool"
+  ],
+  "author": "Gustav Burchardt <gustavburchardt@gmail.com> (https://gustavgb.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gustavgb/html-bricks-plugin-inline-css/issues"
+  },
+  "homepage": "https://github.com/gustavgb/html-bricks-plugin-inline-css#readme",
+  "peerDependencies": {
+    "html-bricks": "0.x"
+  }
+}
