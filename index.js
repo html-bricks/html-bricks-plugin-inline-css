@@ -1,7 +1,7 @@
 const path = require('path')
 const cssReg = /\.css$/
 const htmlReg = /\.html$/
-const linkReg = /<link (?=.*rel="stylesheet")(?=.*type="text\/css")(?=.*href="(.+?\.css)").*?>/g
+const linkReg = /<link (?=.*?rel="stylesheet")(?=.*?type="text\/css")(?=.*?href="(.+?\.css)").*?>/g
 const headReg = /<\/head>/
 
 exports.postBuild = function postBuild (files, config) {
@@ -12,12 +12,9 @@ exports.postBuild = function postBuild (files, config) {
 
       const next = filtered.map(file => {
         if (file.src.match(htmlReg)) {
-          console.log(file.content.toString())
           const links = []
           let markup = file.content.toString().replace(linkReg, function (match, href) {
             links.push(path.resolve(config.buildDir, href.replace(/^\//, '')))
-
-            console.log(match, href)
 
             return ''
           })
