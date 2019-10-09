@@ -1,6 +1,6 @@
 {
   "name": "html-bricks-plugin-inline-css",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Inline css for HTML-bricks",
   "main": "index.js",
   "scripts": {
